@@ -6,7 +6,6 @@ using AppDbContext db = new AppDbContext();
 
 while (true)
 {
-    Console.WriteLine("\n===== MENU =====");
     Console.WriteLine("1. Department yarat");
     Console.WriteLine("2. Department sil");
     Console.WriteLine("3. Departmentleri goster");
@@ -176,4 +175,5 @@ static (bool? flowControl, object value) NewMethod(AppDbContext db)
     db.SaveChanges();
     Console.WriteLine("Employee yaradildi.");
     return (flowControl: null, value: null);
+
 }
